@@ -364,6 +364,21 @@ function updateScore(wall) {
   var headerText = 'SCORE\n' + GAME.score;
   GAME.headerText.setText(headerText);
 }
+function sendScore() {
+    fetch('/update-score', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            score: GAME.score,
+            mongo_id: mongoId // Send mongoId to identify user
+        }),
+    })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error('Error sending score:', error));
+}
 
 var STATE = {
   init: init,
