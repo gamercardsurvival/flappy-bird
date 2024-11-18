@@ -12,9 +12,12 @@ var IS_MOBILE = (window.innerWidth < 640) ? true : false;
 var GAME = null; // game object
 var LOG = null;
 var GAME_WIDTH = (IS_MOBILE) ? 320 : 640;
-var GAME_HEIGHT = 568;
+var GAME_HEIGHT = 568;  
+const urlParams = new URLSearchParams(window.location.search);
+const mongoId = urlParams.get('mongo_id');
 var GAME_ID = 'game-canvas'; 
-const mongoId = document.getElementById('game-canvas').getAttribute('data-mongo-id');
+const gameCanvas = document.getElementById('game-canvas'); 
+gameCanvas.setAttribute('data-mongo-id', mongoId);
 var SOUND_VOLUME = 0.1; // 0 - 1
 
 var DEBUG_XPOS;
