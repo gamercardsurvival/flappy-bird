@@ -307,7 +307,7 @@ function jump() {
 function gameOverScreen() {
   // play sound
   GAME.hurtSnd.play();
-
+  sendScore();
   // set var
   GAME.timeOver = GAME.time.now;
   GAME.isGameOver = true;
