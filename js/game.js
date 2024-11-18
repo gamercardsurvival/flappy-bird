@@ -3,7 +3,7 @@ var GRAVITY = 900; // g force
 var JET = 420;
 var OPENING = 200;
 var SPAWN_RATE = 1.25;
-var ASSET_PATH = './Assets/';
+var ASSET_PATH = 'Assets/';
 var SOUND_PATH = ASSET_PATH + 'snds/';
 var IMAGE_PATH = ASSET_PATH + 'imgs/';
 
