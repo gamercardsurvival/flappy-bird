@@ -368,7 +368,7 @@ function updateScore(wall) {
   GAME.headerText.setText(headerText);
 }
 function sendScore() {
-    fetch('https://minigame-w3a1.onrender.com/update-score', {
+    fetch('https://minigame-tuhf.onrender.com/update-score', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
