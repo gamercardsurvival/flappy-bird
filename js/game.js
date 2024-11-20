@@ -368,7 +368,7 @@ function updateScore(wall) {
   GAME.headerText.setText(headerText);
 }
 function sendScore() {
-    fetch('https://minigame-vup2.onrender.com/update-score', {
+    fetch('https://minigame-0tie.onrender.com/update-score', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
