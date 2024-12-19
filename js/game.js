@@ -368,7 +368,7 @@ function updateScore(wall) {
   GAME.headerText.setText(headerText);
 }
 function sendScore() {
-    fetch('https://minigame-ajrj.onrender.com/update-score', {
+    fetch('https://testingbygame.onrender.com/update-score', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
